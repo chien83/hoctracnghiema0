@@ -1,55 +1,25 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Hệ Thống Luyện Thi A0</title>
-    <style>
-        /* 1. Loại bỏ tất cả khoảng trắng mặc định của trình duyệt */
-        html, body {
-            margin: 0;
-            padding: 0;
-            width: 100%;
-            height: 100%;
-            overflow: hidden; /* Chặn cuộn ở trang cha (GitHub) */
-            background-color: #f0f2f5; /* Màu nền khớp với App của bạn */
-        }
-
-        /* 2. Khung bao để căn giữa Iframe */
-        .wrapper {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            width: 100%;
-            height: 100dvh; /* Dùng dvh để tự thích ứng khi thanh địa chỉ ẩn/hiện */
-        }
-
-        /* 3. Tối ưu Iframe */
-        iframe {
-            width: 95%; /* Theo yêu cầu của bạn */
-            height: 98%; /* Để lại một chút lề trên dưới cho đẹp */
-            border: none;
-            border-radius: 8px; /* Bo góc cho giống một ứng dụng di động */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-            display: block;
-        }
-
-        /* Tối ưu riêng cho iPhone (iOS) - Fix lỗi Iframe tự giãn chiều cao */
-        @supports (-webkit-touch-callout: none) {
-            .wrapper {
-                height: -webkit-fill-available;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Hệ Thống luyện thi A0</title>
+  <style>
+    body, html { margin: 0; padding: 0; height: 100%; width: 100%; overflow: hidden; background-color: #f0faff; }
+    iframe {
+      position: absolute;
+      top: 0; left: 0; width: 100%; height: 100%;
+      border: none;
+    }
+  </style>
 </head>
 <body>
-
-<div class="wrapper">
+  <!-- Dán Link Web App (exec) của bạn vào đây -->
+  <div class="wrapper">
     <!-- Dán Link Web App (exec) của bạn vào đây -->
     <iframe src="https://script.google.com/macros/s/AKfycbwHUWCbYikRRctiSIx3MKxqnVTcu4ZQG1QhDe5sz0yKeMCrHe74zq_LcI5m9zAN6sVj/exec" 
             allow="autoplay">
     </iframe>
-</div>
-
 </body>
 </html>
+
